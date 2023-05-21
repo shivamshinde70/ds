@@ -53,3 +53,6 @@ class Token {
         }while( ch == 1 );            
     }
 }
+
+//Output 
+8 6 4 100
