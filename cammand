@@ -1,0 +1,21 @@
+//RMI
+
+javac *.java
+
+rmic AddServerImpl
+
+rmiregistry
+
+java AddServer
+
+java AddClient 127.0.0.1 10 5
+
+
+//MPI 
+sudo apt-get install openmpi-bin libopenmpi-dev
+
+mpicc MPI.c -o MPI
+
+mpicc -I/path/to/mpi/include MPI.c -o MPI
+
+./MPI
